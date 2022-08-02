@@ -25,7 +25,7 @@
     const { title, subtitle, img, alt, chef, time, ingredients } = recipe;
 </script>
 
-<Topbar {title} subtitle={""} />
+<Topbar {title} subtitle={""} isMain={false} />
 
 <main class="my-12">
     <h3 class="font-bold mb-2 pb-2 border-b border-gray-200 text-xl">

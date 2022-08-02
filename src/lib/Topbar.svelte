@@ -1,6 +1,7 @@
 <script>
     export let title = "Recipes";
     export let subtitle = "For Ninjas";
+    export let isMain = true;
 </script>
 
 <div class="pb-0">
@@ -16,7 +17,12 @@
     </div>
 
     <div>
-        <h2 class="text-gray-900 text-6xl font-semibold">{title}</h2>
+        <h2
+            class="text-gray-900 text-6xl font-semibold"
+            class:text-4xl={!isMain}
+        >
+            {title}
+        </h2>
         <h3 class="text-2xl font-semibold">{subtitle}</h3>
     </div>
 </div>
