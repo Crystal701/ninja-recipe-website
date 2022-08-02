@@ -46,10 +46,14 @@
                         >
                     </a>
                     <a href="/">
-                        <span class="navlinks hover:border-red-300">About</span>
+                        <span
+                            class="navlinks hover:border-red-400 text-gray-300 cursor-not-allowed"
+                            >About</span
+                        >
                     </a>
                     <a href="/">
-                        <span class="navlinks hover:border-red-300"
+                        <span
+                            class="navlinks hover:border-red-400 text-gray-300 cursor-not-allowed"
                             >Contact</span
                         >
                     </a>

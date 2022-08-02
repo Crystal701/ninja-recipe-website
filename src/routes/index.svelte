@@ -1,7 +1,9 @@
 <script>
     import { recipes } from "../stores/recipes.js";
+    import Topbar from "$lib/Topbar.svelte";
 </script>
 
+<Topbar />
 <main>
     {#each Object.entries($recipes) as [title, cuisines]}
         <div class="my-8">
@@ -10,7 +12,10 @@
             </h4>
             <div class="flex flex-col lg:flex-row gap-6">
                 {#each cuisines as cuisine}
-                    <a href="/" class="card lg:w-1/3 hover:scale-105">
+                    <a
+                        href={`/recipes/${cuisine.id}`}
+                        class="card lg:w-1/3 hover:scale-105 bg-white"
+                    >
                         <div class="badge">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
