@@ -13,6 +13,7 @@
             <div class="flex flex-col lg:flex-row gap-6">
                 {#each cuisines as cuisine}
                     <a
+                        sveltekit:prefetch
                         href={`/recipes/${cuisine.id}`}
                         class="card lg:w-1/3 hover:scale-105 bg-white"
                     >
